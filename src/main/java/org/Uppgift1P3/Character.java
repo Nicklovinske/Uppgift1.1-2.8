@@ -14,7 +14,7 @@ public class Character {
             this.health = maxHealth;
         }
 
-        public void takeDamage(int amount){
+        void takeDamage(int amount){
             this.health = this.health - amount;
             if (amount > this.health){
                 this.health = 0;

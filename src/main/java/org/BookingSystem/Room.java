@@ -1,8 +1,8 @@
-package org;
+package org.BookingSystem;
 
 public class Room {
-    private int capacity;
     private String roomName;
+    private int capacity;
     private boolean isBooked;
 
     public Room(String roomName, int capacity) {
