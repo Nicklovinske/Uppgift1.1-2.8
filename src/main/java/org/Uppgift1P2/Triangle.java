@@ -17,6 +17,25 @@ public class Triangle {
         this.sideC = sideC;
     }
 
+    //constructs a triangle where all 3 sides are equal to the specified side
+    public Triangle(double side){
+        this.sideA = side;
+        this.sideB = side;
+        this.sideC = side;
+    }
+
+    public Triangle(Triangle original){
+        this.sideA = original.sideA;
+        this.sideB = original.sideB;
+        this.sideC = original.sideC;
+    }
+
+    public static Triangle copyTo(Triangle clone, Triangle original){
+        clone.sideA = original.sideA;
+        clone.sideB = original.sideB;
+        clone.sideC = original.sideC;
+    }
+
     public double setSideA(double sideA) {
         this.sideA = sideA;
         return sideA;
@@ -62,4 +81,5 @@ public class Triangle {
         return !(sideA + sideB <= sideC) && !(sideA + sideC <= sideB) && !(sideB + sideC <= sideA);
 
     }
+
 }

@@ -23,7 +23,6 @@ public class ProductRegister {
         IO.println("The total value of all whey protein in stock is: $" + product3.totalValue());
         IO.println("The total value of all products in stock is: $" + Math.addExact(product1.totalValue(), Math.addExact(product2.totalValue(), product3.totalValue())));
 
-
     }
 
 
